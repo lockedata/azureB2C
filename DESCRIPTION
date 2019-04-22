@@ -1,0 +1,19 @@
+Package: azureB2C
+Title: New slick project!
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Steph",
+           family = "Locke",
+           role = c("aut", "cre"),
+           email = "steph@itsalocke.com",
+           comment = c(ORCID = "0000-0002-2387-3723"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: es
+LazyData: true
+Suggests: 
+    testthat,
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
