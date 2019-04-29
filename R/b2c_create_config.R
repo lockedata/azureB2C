@@ -5,9 +5,12 @@
 #'
 #' @export
 #'
-#' @examples \donttest{b2c_create_config()}
-b2c_create_config = function(path = ".", ...) {
-  config = list(
+#' @examples
+#' \donttest{
+#' b2c_create_config()
+#' }
+b2c_create_config <- function(path = ".", ...) {
+  config <- list(
     default = list(
       app_name = "application name",
       client_id = "gu-id",

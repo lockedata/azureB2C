@@ -7,11 +7,16 @@
 #' @return Config list object
 #' @export
 #'
-#' @examples \donttest{b2c_get_config()}
-b2c_get_config = function(path = ".",
-                          config = Sys.getenv("R_CONFIG_ACTIVE", "default"),
-                          ...) {
-  config::get(config = config,
-              file = file.path(path, "config.yml"),
-              ...)
+#' @examples
+#' \donttest{
+#' b2c_get_config()
+#' }
+b2c_get_config <- function(path = ".",
+                           config = Sys.getenv("R_CONFIG_ACTIVE", "default"),
+                           ...) {
+  config::get(
+    config = config,
+    file = file.path(path, "config.yml"),
+    ...
+  )
 }

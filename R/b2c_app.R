@@ -8,11 +8,12 @@
 #' @return A list of class `oauth_app`
 #' @export
 #'
-#' @examples b2c_app("example","guid")
-b2c_app = function(app_name,
-                   client_id,
-                   client_secret = NULL,
-                   redirect_uri = "https://localhost:1410") {
+#' @examples
+#' b2c_app("example", "guid")
+b2c_app <- function(app_name,
+                    client_id,
+                    client_secret = NULL,
+                    redirect_uri = "https://localhost:1410") {
   httr::oauth_app(
     appname = app_name,
     key = client_id,
