@@ -17,3 +17,10 @@ Suggests:
     knitr,
     rmarkdown
 VignetteBuilder: knitr
+Imports: 
+    httr,
+    config,
+    yaml,
+    glue
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.1.1
