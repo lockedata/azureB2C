@@ -14,9 +14,12 @@ b2c_create_config <- function(path = ".", ...) {
     default = list(
       app_name = "application name",
       client_id = "gu-id",
-      client_secret = "some string",
-      resource_uri = "https://something",
-      redirect_uri = "https://localhost:1410"
+      client_secret = NULL,
+      resource_uri = "https://jwt.ms",
+      redirect_uri = "https://jwt.ms",
+      scopes = "read",
+      tenant = "b2c tenant",
+      flow = "case sensitive"
     ),
     test = list(),
     production = list()

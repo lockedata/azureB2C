@@ -12,11 +12,12 @@
 b2c_endpoint <- function(tenant,
                          flow) {
   base <- glue::glue(
-    "https://{tenant}.b2clogin.com/tfp/{tenant}.onmicrosoft.com/{flow}/oauth2/v2.0"
+    "https://{tenant}.b2clogin.com/{tenant}.onmicrosoft.com/oauth2/v2.0"
   )
+  authorize <- glue::glue("{base}/authorize/?p={flow}")
+  access <- glue::glue("{base}/token")
   httr::oauth_endpoint(
-    authorize = "authorize",
-    access = "token",
-    base_url = base
+    authorize = authorize,
+    access = authorize
   )
 }
